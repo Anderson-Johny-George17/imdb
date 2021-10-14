@@ -1,5 +1,5 @@
 # (c) PR0FESS0R-99
-from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS, TUTORIAL
+from Config import AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, API_KEY, AUTH_GROUPS
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 import re
@@ -53,8 +53,8 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**\n\n**©️ Group by {message.chat.title}**"
-        files = await
+        mo_tech_yt = f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**©️ Group by {message.chat.title}**"
+        files = await get_filter_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
@@ -63,9 +63,9 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
                     )
         else:
-            await message.reply(quote=True,text="<b>⚠️ 𝗣𝗟𝗘𝗔𝗦𝗘 𝗣𝗥𝗢𝗩𝗜𝗗𝗘 𝗧𝗛𝗘 𝗖𝗢𝗥𝗥𝗘𝗖𝗧 𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>\n\n<b>✍ ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല</b>")
+            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
             return
-    
+
         if not btn:
             return
 
@@ -115,8 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**🎭 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**\n\n**©️ Group by {message.chat.title}**"
-        files = await
+        mo_tech_yt = f"**🎬 Title:** {search}\n\n**⭐ Rating:** {random.choice(RATING)}\n\n**📜 Genre:** {random.choice(GENRES)}\n\n**💿 Quality :- HDRip**\n\n**©️ Group by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -131,11 +130,24 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=pr0fess0r_99_-_-_-_{file_id}")]
                 )
         else:
-            await message.reply(quote=True,text="<b>⚠️ 𝗣𝗟𝗘𝗔𝗦𝗘 𝗣𝗥𝗢𝗩𝗜𝗗𝗘 𝗧𝗛𝗘 𝗖𝗢𝗥𝗥𝗘𝗖𝗧 𝗠𝗢𝗩𝗜𝗘 𝗡𝗔𝗠𝗘 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>\n\n<b>✍ ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല</b>")
+            LuciferMoringstar=await client.send_message(
+            chat_id = message.chat.id,
+            text=f"""
+👋𝙃𝙚𝙮 {message.from_user.mention}
+𝕀𝕗 𝕥𝕙𝕚𝕤 𝕞𝕠𝕧𝕚𝕖 𝕚𝕤 𝕟𝕠𝕥 𝕚𝕟 𝕠𝕦𝕣 𝕕𝕒𝕥𝕒𝕓𝕤𝕖 𝕪𝕠𝕦 𝕨𝕚𝕝𝕝 𝕟𝕠𝕥 𝕘𝕖𝕥 𝕥𝕙𝕒𝕥 𝕞𝕠𝕧𝕚𝕖...
+𝕠𝕥𝕙𝕖𝕣𝕨𝕚𝕤𝕖, 𝕥𝕙𝕖 𝕤𝕡𝕖𝕝𝕝𝕚𝕟𝕘 𝕠𝕗 𝕥𝕙𝕖 𝕟𝕒𝕞𝕖 𝕠𝕗 𝕥𝕙𝕖 𝕣𝕖𝕢𝕦𝕖𝕤𝕥𝕖𝕕 𝕄𝕠𝕧𝕚𝕖 𝕞𝕒𝕪 𝕟𝕠𝕥 𝕓𝕖 𝕔𝕠𝕣𝕣𝕖𝕔𝕥......
+𝕤𝕠 𝕪𝕠𝕦 𝕘𝕠 𝕥𝕠 <a href='https://www.google.com'>🔍  𝔾𝕠𝕠𝕘𝕝𝕖 🔎</a> </b>\n\n<b>𝕒𝕟𝕕 ℂ𝕙𝕖𝕔𝕜 𝕋𝕙𝕖 𝕊𝕡𝕖𝕝𝕝𝕚𝕟𝕘 𝕠𝕗 𝕥𝕙𝕖 ℕ𝕒𝕞𝕖 𝕆𝕗 𝕋𝕙𝕖 𝕄𝕠𝕧𝕚𝕖 𝕐𝕠𝕦 𝕎𝕒𝕟𝕥...🙏🙏
+
+ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
+അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
+അതിനാൽ നിങ്ങൾ <a href='https://www.google.com'>🔍  ഗൂഗിളിൽ  🔎</a> </b>\n\n<b> പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക🙏🙏""",
+            parse_mode="html",
+            reply_to_message_id=message.message_id
+        )
             return
-    
         if not btn:
             return
+
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
             keyword = f"{message.chat.id}-{message.message_id}"
@@ -278,19 +290,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('♻️𝙂𝙍𝙊𝙐𝙋♻️', url='t.me/ADMOVEIAD'),
-                InlineKeyboardButton('⭕️𝘾𝙃𝘼𝙉𝙉𝙀𝙇⭕️', url="https://t.me/ADMOVEI")
-
-              
+                InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
+                InlineKeyboardButton('Source Code', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
+                ],[
+                InlineKeyboardButton('🎬Group🎬', url=f'https://t.me/ADMOVEIAD')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('♻️𝙂𝙍𝙊𝙐𝙋♻️', url='t.me/ADMOVEIAD'),
-                InlineKeyboardButton('⭕️𝘾𝙃𝘼𝙉𝙉𝙀𝙇⭕️', url="https://t.me/ADMOVEI")
-
+                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
+                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -313,9 +324,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♻️𝙂𝙍𝙊𝙐𝙋♻️', url='t.me/ADMOVEIAD'),
-                    InlineKeyboardButton('⭕️𝘾𝙃𝘼𝙉𝙉𝙀𝙇⭕️',url='t.me/ADMOVEI'),
-                
+                        InlineKeyboardButton('🎬 Group 🎬', url=f'https://t.me/ADMOVEIAD')
                     ]
                     ]
                 
@@ -346,7 +355,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎬 Movies 🎬', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🎬 Helo 🎬', url=f'{TUTORIAL}')
                     ]
                     ]
                 
