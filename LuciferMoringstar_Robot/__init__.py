@@ -33,7 +33,7 @@ HELP = """
 """
 
 ABOUT = """
-➥ Name : [Auto Filter With IMDB](t.me/Flixautofilter1_bot
+➥ Name : [Auto Filter With IMDB](t.me/Flixautofilter1_bot) 
     
 ➥ Dev  : [Anderson](t.me/Anderson_Johny) 
 
