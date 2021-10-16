@@ -16,19 +16,14 @@ LOG_CHANNEL = BROADCAST_CHANNEL
 
 db = Database(DB_URL, SESSION)
 
-PHOTO = ["https://telegra.ph/file/253505c5e1ef340d80112.jpg",
-         "https://telegra.ph/file/002c46a17c6fd8fc9c9cb.jpg",
-         "https://telegra.ph/file/0781b7c27ebdb606ed5f0.jpg",
-         "https://telegra.ph/file/264aacb489025ee4c72d1.jpg",
-         "https://telegra.ph/file/59a1b6e0876c5d81c2af3.jpg",
-         "https://telegra.ph/file/263eb8cb3791ad1dad318.jpg",
-         "https://telegra.ph/file/11204d4f471b170d5fbc7.jpg",
-         "https://telegra.ph/file/351be468f4b7ddfe7cfe1.jpg",
-         "https://telegra.ph/file/c85151883fa90a37dab55.jpg",
-         "https://telegra.ph/file/c67c552726522f41dc2f8.jpg",
-         "https://telegra.ph/file/e13b90f0df72b41e3af10.jpg",
-         "https://telegra.ph/file/33c3ce1602152028b6eb7.jpg",
-         "https://telegra.ph/file/988b7f29ac5fd4da2d2b2.jpg",
+PHOTO = ["https://telegra.ph/file/f19a2f0d4891d9084c73d.jpg",
+         "https://telegra.ph/file/8ede00e00fdbb914751e1.jpg",
+         "https://telegra.ph/file/6d65d4819fd534b4ce139.jpg",
+         "https://telegra.ph/file/6c0894732ea417498f0a1.jpg",
+         "https://telegra.ph/file/b0010d1ae3ce89bd58030.jpg",
+         "https://telegra.ph/file/3960085a42ba643862a23.jpg",
+         "https://telegra.ph/file/4fc4b92aa6e219acc560f.jpg",
+         
 ]
 
 @Client.on_message(filters.command("start"))
