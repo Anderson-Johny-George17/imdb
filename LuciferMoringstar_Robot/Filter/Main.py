@@ -141,9 +141,9 @@ async def group(client, message):
 
 ⚠️  Sorry, No Movie Related to the Given Word Was Found 🥺
 
-🔗 Check Your Spelling In   <a href='https://www.google.com'>  🔍  GOOGLE  🔎 </a> </b>\n\n<b> And Try Again
+🔗 Check Your Spelling In <a href='https://www.google.com'>  🔍  GOOGLE  🔎 </a> </b> And Try Again
 
-✍️Or Your Spelling Is Correct Report To <a href='https://t.me/Anderson_Johny'>admin</a> </b>\n\n<b> For Add Requested File 😇""", 
+✍️Or Your Spelling Is Correct Report To <a href='https://t.me/Anderson_Johny'>admin</a> </b>For Add Requested File 😇""", 
 
             parse_mode="html",
 
