@@ -33,11 +33,9 @@ HELP = """
 """
 
 ABOUT = """
-➥ Name : Auto Filter With IMDB
+➥ Name : [Auto Filter With IMDB](t.me/Flixautofilter1_bot
     
-➥ Credits : Subin
-
-➥ Editing : [Muhammed RK](t.me/Mrk_YT)
+➥ Dev  : [Anderson](t.me/Anderson_Johny) 
 
 ➥ Language : Python3
 
