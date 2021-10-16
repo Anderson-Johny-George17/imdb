@@ -299,18 +299,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
+                InlineKeyboardButton('Update Channel', url='t.me/Flix_updates'),
                 InlineKeyboardButton('Source Code', url="https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot")
                 ],[
-                InlineKeyboardButton('🎬Group🎬', url=f'https://t.me/ADMOVEIAD')
+                InlineKeyboardButton('🎬Group🎬', url=f'https://t.me/flixcorner_group')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='t.me/Mo_Tech_YT'),
-                    InlineKeyboardButton('Source Code', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('Update Channel', url='t.me/Flix_updates'),
+                    InlineKeyboardButton('⚜️ GROUP ⚜️', url='https://t.me/flixcorner_group')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -333,7 +333,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎬 Group 🎬', url=f'https://t.me/ADMOVEIAD')
+                        InlineKeyboardButton('🎬 Group 🎬', url=f'https://t.me/Flixcorner_group')
                     ]
                     ]
                 
