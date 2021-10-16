@@ -92,7 +92,7 @@ def get_reply_markup(query):
         InlineKeyboardButton('Support Group', url='t.me/Flixcorner_group'),
         InlineKeyboardButton('🔰 Update channel 🔰', url='t.me/Flix_Updates')
         ],[
-        InlineKeyboardButton('🖥️ Your own Bot 🖥️', url='https://t.me/flix_corner)
+        InlineKeyboardButton('🖥️ Your own Bot 🖥️', url='https://t.me/flix_corner')
         ],[
         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
         ]]
