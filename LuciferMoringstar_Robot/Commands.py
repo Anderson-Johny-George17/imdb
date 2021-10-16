@@ -94,7 +94,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♻️ Movies ♻️', url='https://t.me/flicorner_group')
+                        InlineKeyboardButton('♻️ Movies ♻️', url='https://t.me/flixcorner_group')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
