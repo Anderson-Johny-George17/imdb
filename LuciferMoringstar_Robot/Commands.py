@@ -371,7 +371,8 @@ async def bot_info(bot, message):
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-         
+ 
+    
 
 @Client.on_message(filters.command(["reqformat"]))
 
@@ -408,4 +409,3 @@ Hush 2016
         ]
 
     await message.reply(text=req_txt, reply_markup=InlineKeyboardMarkup(buttons), parse_mode="html", disable_web_page_preview=True
-    
