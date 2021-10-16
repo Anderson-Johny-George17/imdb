@@ -94,7 +94,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♻️ Movies ♻️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('♻️ Movies ♻️', url='https://t.me/flicorner_group')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
@@ -129,34 +129,36 @@ async def start(bot, message):
 
             caption=START_MSG,
 
-            reply_markup=InlineKeyboardMarkup(
+           reply_markup=InlineKeyboardMarkup(
 
-               [[
+                     [[
 
-                InlineKeyboardButton("➕️ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐂𝐇𝐀𝐓𝐒 ➕️", url='http://t.me/AD_Movie_Imdb_bot?startgroup=botstart'),
+                InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
 
-                ],[
+                 InlineKeyboardButton("UPDATES Channel", url="https://t.me/Flix_updates")
 
-                InlineKeyboardButton("🎬𝐆𝐑𝐎𝐔𝐏", url='https://t.me/ADMOVEIAD'),
+                    ],[
 
-                InlineKeyboardButton("🌀𝐂𝐇𝐀𝐍𝐍𝐄𝐈𝐋", url='https://t.me/ADMOVEI'),
+                InlineKeyboardButton("➕ ADD ME TO YOUR GROUP➕", url="https://t.me/Flixautofilter1_bot?startgroup=true"), 
 
-                ],[
-
-                InlineKeyboardButton("♂️ 𝐒𝐄𝐀𝐑𝐂𝐇 𝐇𝐄𝐑𝐄 ?", switch_inline_query_current_chat=''),
-
-                InlineKeyboardButton("🤠𝐃𝐄𝐕", url='https://t.me/Lucifer_Devil_AD'),
+                    
 
                 ],[
 
-                InlineKeyboardButton("🌟 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 🌟", url='https://youtu.be/_VsO95qmxF4')
+                InlineKeyboardButton("Channels", url="https://t.me/Flix_Corner"),
+
+                InlineKeyboardButton("About", callback_data="about")
 
                 ]]
 
             )
 
         )
+
         StopPropagation
+
+               
+                
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
@@ -364,8 +366,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/MT_Botz'),
-            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('🔰 Channel 🔰', url='https://t.me/Flix_Updates'),
+            InlineKeyboardButton('🔥 MY DEV 🔥', url='https://t.me/Anderson_Johny')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
