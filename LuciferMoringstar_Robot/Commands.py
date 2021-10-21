@@ -149,6 +149,12 @@ async def start(bot, message):
 
                 InlineKeyboardButton("About", callback_data="about")
 
+                ],[
+
+                InlineKeyboardButton("🔥 DEV 🔥", url="https://t.me/itzz_me_17")
+
+               
+
                 ]]
 
             )
