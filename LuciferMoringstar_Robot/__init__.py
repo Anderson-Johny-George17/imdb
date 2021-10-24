@@ -35,11 +35,11 @@ HELP = """
 ABOUT = """
 ➥ Name : [Auto Filter With IMDB](t.me/Flixautofilter1_bot) 
     
-➥ Dev  : [Anderson](t.me/Anderson_Johny) 
+➥ Dev  : [Anderson](t.me/itzz_me_17) 
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Source Code : [Click Me](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+➥ Source Code : [Click Me](t.me/itzz_me_17)
 """
