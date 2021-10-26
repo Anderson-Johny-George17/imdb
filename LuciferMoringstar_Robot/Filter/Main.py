@@ -136,14 +136,21 @@ async def group(client, message):
             chat_id = message.chat.id,
 
             text=f"""
+Requested movie: {search}
 
-            👋 𝙃𝙚𝙮 {message.from_user.mention}
+Not available Right Now
 
-⚠️  Sorry, No Movie Related to the Given Word Was Found 🥺
+Possible Causes : 🤔
 
-🔗 Check Your Spelling In <a href='https://www.google.com'>  🔍  GOOGLE  🔎 </a> </b> And Try Again
+⭕️ Not released yet
 
-✍️Or Your Spelling Is Correct Report To <a href='https://t.me/Anderson_Johny'>admin</a> </b>For Add Requested File 😇""", 
+⭕️ <a href='https://www.google.com'>   Spelled incorrectly </a>
+
+⭕️ Unwanted texts in Msgs
+
+⭕ Asking theatre prints
+
+⭕ Not in my Database""", 
 
             parse_mode="html",
 
